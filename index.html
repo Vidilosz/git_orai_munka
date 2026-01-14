@@ -9,19 +9,27 @@
     <title>Regisztrációs felület</title>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
+  <script type="module" src="/src/main.js"></script>
 
-    <h1>Regisztrációs felület</h1>
+  <h1 class="text-center mb-4">Regisztrációs felület</h1>
 
-    <form>
-  <label for="name">Name:</label><br>
-  <input type="text" id="name" name="name"><br>
-  <label for="email">Email:</label><br>
-  <input type="text" id="email" name="email"><br>
-  <label for="password">Password:</label><br>
-  <input type="text" id="password" name="password"><br><br>
-  <input type="submit" value="Submit">
+  <form id="registerForm" class="card p-4 shadow-sm">
+  <div class="mb-3">
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" required><br>
+  </div>
+
+  <div class="mb-3">
+    <label for="email">Email:</label><br>
+    <input type="text" id="email" name="email" required><br>
+  </div>
+
+  <div class="mb-3">
+    <label for="password">Password:</label><br>
+  <input type="text" id="password" name="password" required><br><br>
+  </div>
+  
+  <input type="submit" value="Regisztráció">
   </form> 
 
   <br>
